@@ -90,3 +90,15 @@ $  uvicorn app.main:app --reload
 After the server is started, the API Doc is available at [`http://127.0.0.1:8000/docs`](http://127.0.0.1:8000/docs) or [`http://127.0.0.1:8000/redoc`](http://127.0.0.1:8000/redoc).
 
 ## Run tests locally
+
+To run all tests please run:
+
+```shell
+$ ./scripts/test/start.sh
+```
+
+If you want to have a coverage html report run:
+
+```shell
+$ ./scripts/test/start-cov-html.sh
+```
