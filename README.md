@@ -40,7 +40,7 @@ $ poetry shell
 The application requires a bunch of environment variables to be set. You can export them into your environment, or create an `.env` file in the root directory. You can use the following content (only for local testing, not recommended for production):
 
 ```dotenv
-PROJECT_NAME="FastAPI + Vue + Vuetify Template"
+PROJECT_NAME="FastAPI Template"
 SERVER_HOST="http://localhost:8000"
 BACKEND_CORS_ORIGINS='["http://localhost:8080", "http://localhost:3000"]'
 
@@ -101,4 +101,26 @@ If you want to have a coverage html report run:
 
 ```shell
 $ ./scripts/test/start-cov-html.sh
+```
+
+## Dev Tools
+
+The project also comes with the following developer tools:
+
+* [flake8](https://flake8.pycqa.org/): Tool For Style Guide Enforcement
+* [Mypy](http://mypy-lang.org/): Mypy is an optional static type checker for Python that aims to combine the benefits of dynamic (or "duck") typing and static typing.
+* [Black](https://pypi.org/project/black/): Black is a PEP 8 compliant opinionated formatter.
+* [isort](https://pycqa.github.io/isort/): isort is a Python library to sort imports alphabetically, and automatically separated into sections and by type. 
+* [autoflake](https://pypi.org/project/autoflake/): autoflake removes unused imports and unused variables from Python code. It makes use of pyflakes to do this.
+
+You can check your code with:
+
+```shell
+$ ./scripts/format/check.sh
+```
+
+You can run auto-formatting with:
+
+```shell
+$ ./scripts/format/format.sh
 ```
