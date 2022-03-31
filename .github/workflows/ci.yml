@@ -20,17 +20,35 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
+        id: setup-python
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Run image
-        uses: abatilo/actions-poetry@v2.1.4
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
         with:
-          poetry-version: 1.1.13
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
       - name: Install dependencies
-        run: poetry install
-#      - name: Activate virtual environment
-#        run: poetry shell
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Install dependencies
+        run: poetry install --no-interaction
+
       - name: Run tests
-        run: ./scripts/test/start.sh
+        run: |
+          source .venv/bin/activate
+          ./scripts/test/start.sh
