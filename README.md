@@ -1,3 +1,6 @@
+[![Continuous Integration](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/ci.yml/badge.svg)](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/ci.yml)
+[![Check Format](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/check-format.yml/badge.svg)](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/check-format.yml)
+
 # README
 
 This repository is a template repository for projects based on FastAPI. It comes with:
@@ -90,6 +93,8 @@ $  uvicorn app.main:app --reload
 After the server is started, the API Doc is available at [`http://127.0.0.1:8000/docs`](http://127.0.0.1:8000/docs) or [`http://127.0.0.1:8000/redoc`](http://127.0.0.1:8000/redoc).
 
 ## Run tests locally
+
+First set the following environment variable: `USE_FILE_BASED_DB=True`
 
 To run all tests please run:
 
