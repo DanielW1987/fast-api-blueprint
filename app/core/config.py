@@ -34,7 +34,7 @@ class Settings(BaseSettings):
             return None
         return v
 
-    USE_FILE_BASED_DB: bool = True
+    USE_FILE_BASED_DB: bool = False
     POSTGRES_SERVER: Optional[str]
     POSTGRES_USER: Optional[str]
     POSTGRES_PASSWORD: Optional[str]
