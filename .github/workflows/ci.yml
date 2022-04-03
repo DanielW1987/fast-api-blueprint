@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  USE_FILE_BASED_DB: True
+
 jobs:
   ci:
     strategy:
