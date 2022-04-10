@@ -3,6 +3,7 @@
 .coverage
 .env
 *.iml
+/.idea
 htmlcov
 app.db
 ToDo
