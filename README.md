@@ -95,8 +95,6 @@ After the server is started, the API Doc is available at [`http://127.0.0.1:8000
 
 ## Run tests locally
 
-First set the following environment variable: `USE_FILE_BASED_DB=True`
-
 To run all tests please run:
 
 ```shell
