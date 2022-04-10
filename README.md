@@ -1,7 +1,7 @@
 [![Continuous Integration](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/ci.yml/badge.svg)](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/ci.yml)
 [![Check Format](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/check-format.yml/badge.svg)](https://github.com/DanielW1987/fast-api-blueprint/actions/workflows/check-format.yml)
 
-# README
+## Introduction
 
 This repository is a template repository for projects based on FastAPI. It comes with:
 
