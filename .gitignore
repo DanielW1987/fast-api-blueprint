@@ -2,5 +2,9 @@
 .pytest_cache
 .coverage
 .env
+*.iml
+/.idea
 htmlcov
 app.db
+ToDo
+.DS_Store

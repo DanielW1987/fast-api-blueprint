@@ -32,3 +32,4 @@ services:
 volumes:
   fastapi-template-db-volume:
     name: fastapi-template-db
+    external: true

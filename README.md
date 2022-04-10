@@ -44,7 +44,7 @@ The application requires a bunch of environment variables to be set. You can exp
 
 ```dotenv
 PROJECT_NAME="FastAPI Template"
-SERVER_HOST="http://localhost:8000"
+SERVER_HOST="http://localhost:3000"
 BACKEND_CORS_ORIGINS='["http://localhost:8080", "http://localhost:3000"]'
 
 POSTGRES_SERVER=localhost
@@ -54,6 +54,7 @@ POSTGRES_DB=app_db
 
 SMTP_PORT=1025
 SMTP_HOST=localhost
+SMTP_TLS=False
 EMAILS_FROM_EMAIL=no-reply@example.com
 EMAILS_FROM_NAME="FastAPI Backend"
 
@@ -106,6 +107,14 @@ If you want to have a coverage html report run:
 
 ```shell
 $ ./scripts/test/start-cov-html.sh
+```
+
+## Upgrade dependencies
+
+Upgrade the dependency version in [pyproject.toml](pyproject.toml) and run the following command afterwards:
+
+```shell
+$ poetry update
 ```
 
 ## Dev Tools
