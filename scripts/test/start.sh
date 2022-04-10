@@ -3,4 +3,4 @@
 set -e
 set -x
 
-pytest --cov=app --cov-report=term-missing app/tests "${@}"
+USE_FILE_BASED_DB=True pytest --cov=app --cov-report=term-missing app/tests "${@}"
