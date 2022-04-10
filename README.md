@@ -109,6 +109,14 @@ If you want to have a coverage html report run:
 $ ./scripts/test/start-cov-html.sh
 ```
 
+## Upgrade dependencies
+
+Upgrade the dependency version in [pyproject.toml](pyproject.toml) and run the following command afterwards:
+
+```shell
+$ poetry update
+```
+
 ## Dev Tools
 
 The project also comes with the following developer tools:
