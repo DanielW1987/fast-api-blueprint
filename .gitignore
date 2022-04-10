@@ -2,7 +2,7 @@
 .pytest_cache
 .coverage
 .env
-/.idea
+*.iml
 htmlcov
 app.db
 ToDo
