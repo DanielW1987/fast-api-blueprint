@@ -79,6 +79,12 @@ To create the database schema via alembic and create a default admin user run:
 $ ./scripts/init/start.sh
 ```
 
+Maybe you have to run the following command before:
+
+```shell
+export PYTHONPATH="${PYTHONPATH}:/path/to/your/project"
+```
+
 Please note that the script must be run from the root directory.
 
 ### Start server
