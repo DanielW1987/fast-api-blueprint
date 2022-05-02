@@ -20,7 +20,7 @@ gunicorn = "^20.1.0"
 jinja2 = "^3.1.1"
 psycopg2-binary = "^2.9.3"
 alembic = "^1.7.7"
-sqlalchemy = "^1.4.35"
+sqlalchemy = "^1.4.36"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 markupsafe = "2.0.1" # v2.1.1 does not run due to missing soft_unicode
 
