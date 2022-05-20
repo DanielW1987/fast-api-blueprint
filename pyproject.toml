@@ -25,7 +25,7 @@ python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 markupsafe = "2.0.1" # v2.1.1 does not run due to missing soft_unicode
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.941"
+mypy = "^0.950"
 black = "^22.3.0"
 isort = "^5.10.1"
 autoflake = "^1.4"
