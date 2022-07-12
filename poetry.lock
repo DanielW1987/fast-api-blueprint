@@ -434,7 +434,7 @@ python-versions = "*"
 
 [[package]]
 name = "mypy"
-version = "0.941"
+version = "0.961"
 description = "Optional static typing for Python"
 category = "dev"
 optional = false
@@ -442,7 +442,7 @@ python-versions = ">=3.6"
 
 [package.dependencies]
 mypy-extensions = ">=0.4.3"
-tomli = ">=1.1.0"
+tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
 typing-extensions = ">=3.10"
 
 [package.extras]
@@ -861,7 +861,7 @@ standard = ["websockets (>=10.0)", "httptools (>=0.4.0)", "watchfiles (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "44261bbf4aea78c576db749a28388d7b7dc58ab1bef1fedef317214ef6501c1e"
+content-hash = "c5dfc18a7814d60c35988846a0d1bf2c48ec6aa29ef995385702549fd768b609"
 
 [metadata.files]
 alembic = []
